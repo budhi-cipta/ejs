@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partial/head.ejs') %>
+</head>
+<body class="container">
+    <header>
+        <%- include('../partial/header.ejs') %>
+    </header>
+    <main>
+        <div class="aboutMe">
+            <!--pasing data dri index.js-->
+            <h2> <%= bioData %> </h2>
+            <h3> Nama Lengkap: <%- dataProfileku.namaLengkap %></h3>
+            <h3> Nama Panggilan:<%- dataProfileku.namaPanggilan %></h3>
+            <h3> Age:<%- dataProfileku.age %></h3>
+            <h3> Address:<%- dataProfileku.address %></h3>
+            <h3> Hobby:<%- dataProfileku.hoby %></h3>
+        </div>
+    </main>
+
+
+    <%- include('../partial/footer.ejs') %>
+
+</body>
+</html>
